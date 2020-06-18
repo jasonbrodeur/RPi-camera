@@ -16,3 +16,6 @@
   - Enter the IP address of the RPi, along with the vnc instance number. e.g. ```192.168.0.143:1```
   - Enable SSH tunneling
 2. Connect and enjoy!
+
+## Code to stitch images to a video:
+```ffmpeg -r 24 -s 1920x1080 -start_number 1 -i image_%d.jpg -vcodec libx264 -crf 25 lucy-lego.mp4```
